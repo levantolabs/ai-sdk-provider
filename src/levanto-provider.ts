@@ -73,6 +73,8 @@ export function createLevanto(options: LevantoProviderSettings = {}): LevantoPro
       return (options.fetch ?? globalThis.fetch)(input, { ...init, headers: merged });
     },
     includeUsage: true,
+    // Levanto accepts `response_format: json_schema`, so `Output.object` sends the schema.
+    supportsStructuredOutputs: true,
   });
 
   const config = (kind: string) => ({ provider: `levanto.${kind}`, baseURL, headers, fetch: options.fetch });

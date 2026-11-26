@@ -1,6 +1,6 @@
 {
   "name": "@levanto/ai-sdk-provider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Levanto provider for the Vercel AI SDK: Sage decisions and extraction, and Levanto's LLMs.",
   "license": "MIT",
   "author": "Levanto",
@@ -12,7 +12,16 @@
   "bugs": {
     "url": "https://github.com/levantolabs/ai-sdk-provider/issues"
   },
-  "keywords": ["ai", "ai-sdk", "vercel", "levanto", "sage", "decision", "extraction", "llm"],
+  "keywords": [
+    "ai",
+    "ai-sdk",
+    "vercel",
+    "levanto",
+    "sage",
+    "decision",
+    "extraction",
+    "llm"
+  ],
   "sideEffects": false,
   "type": "module",
   "main": "./dist/index.cjs",
@@ -26,7 +35,12 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
   "engines": {
     "node": ">=18"
   },
